@@ -13,7 +13,26 @@ $(function(){
 
   var $avatar = $('.avatar'),
       $header = $('header'),
-      $body = $('article');
+      $body = $('article'),
+      $social = $('.social > li');
+
+  var animSocial = function(){
+    var animQueue = [];
+    $social.each(function(){
+      var el = $(this);
+      animQueue.push(function(){
+        el.removeClass('initial');
+      });
+    });
+
+    var i = 0;
+    var intervalId = window.setInterval(function(){
+      animQueue[i++]();
+      if (i === animQueue.length){
+        window.clearInterval(intervalId);
+      }
+    }, 100);
+  };
 
   window.setTimeout(function(){
     animCallback($avatar, function(){
@@ -21,6 +40,7 @@ $(function(){
         $body.removeClass('initial');
       });
       $header.removeClass('initial');
+      animSocial();
     });
     $avatar.removeClass('initial');
   }, 300);

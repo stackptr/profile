@@ -71,7 +71,7 @@ a {
   display: inline-block;
 }
 
-ul.contact {
+ul.social {
   display: inline;
   position: relative;
   top: -4px;
@@ -79,12 +79,25 @@ ul.contact {
   padding-left: 20px;
 }
 
-ul.contact li {
+ul.social li {
   display: inline;
   margin-right: 0.5rem;
+  opacity: 1;
 }
 
-ul.contact li a {
+ul.social li i {
+  transform: none;
+}
+
+ul.social li.initial {
+  opacity: 0;
+}
+
+ul.social li.initial i {
+  transform: translateX(20px) rotate(-30deg);
+}
+
+ul.social li a {
   color: white;
 }
 
