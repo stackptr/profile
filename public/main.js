@@ -12,7 +12,8 @@ $(function(){
 
 
   var $avatar = $('.avatar'),
-      $header = $('header'),
+      $header = $('.title'),
+      $resume = $('.resume'),
       $body = $('article'),
       $social = $('.social > li');
 
@@ -23,6 +24,10 @@ $(function(){
       animQueue.push(function(){
         el.removeClass('initial');
       });
+    });
+
+    animQueue.push(function(){
+      $resume.removeClass('initial');
     });
 
     var i = 0;
