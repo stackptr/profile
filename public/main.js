@@ -24,5 +24,4 @@ $(function(){
     });
     $avatar.removeClass('initial');
   }, 300);
-
 });
