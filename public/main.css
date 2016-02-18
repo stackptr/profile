@@ -50,6 +50,7 @@ body {
   margin: 0 auto;
   padding: 28px;
   min-height: 100vh;
+  box-sizing: border-box;
 }
 
 h1, p, a {
@@ -153,4 +154,39 @@ article.initial {
   bottom: 0;
   width: 100%;
   height: 200px;
+}
+
+@media (max-width: 830px) {
+  .contact {
+    display: block;
+  }
+
+  .resume {
+    top: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .avatar {
+    width: 100px;
+    height: 100px;
+    margin: 14px;
+  }
+}
+
+@media (max-width: 440px){
+  .avatar {
+    float: none;
+    margin: 14px auto;
+  }
+}
+
+@media (max-width: 520px){
+  h1 {
+    font-size: 1.5em;
+  }
+
+  ul.social {
+    padding-left: 0;
+  }
 }
