@@ -18,6 +18,10 @@ jobs:
           push: true
           tags: stackptr/x64.co:latest
           context: .
+
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
       - uses: distributhor/workflow-webhook@v2
         env:
           webhook_url: ${{ secrets.WEBHOOK_URL }}
