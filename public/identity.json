@@ -31,6 +31,10 @@
     {
       "rel": "http://ostatus.org/schema/1.0/subscribe",
       "template": "https://hachyderm.io/authorize_interaction?uri={uri}"
+    },
+    {
+      "rel": "http://openid.net/specs/connect/1.0/issuer",
+      "href": "https://auth.x64.co"
     }
   ]
 }
