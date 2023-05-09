@@ -1,10 +1,10 @@
 {
   "subject": "acct:corey@x64.co",
-  "aliases" : [
-      "https://hachyderm.io/@byte",
-      "https://hachyderm.io/users/byte",
-      "acct:byte@hachyderm.io"
-   ],
+  "aliases": [
+    "https://hachyderm.io/@byte",
+    "https://hachyderm.io/users/byte",
+    "acct:byte@hachyderm.io"
+  ],
   "links": [
     {
       "rel": "http://webfinger.net/rel/avatar",
@@ -19,18 +19,18 @@
       "href": "https://x64.co/"
     },
     {
-       "href" : "https://hachyderm.io/@byte",
-       "rel" : "http://webfinger.net/rel/profile-page",
-       "type" : "text/html"
+      "rel": "http://webfinger.net/rel/profile-page",
+      "href": "https://hachyderm.io/@byte",
+      "type": "text/html"
     },
     {
-       "href" : "https://hachyderm.io/users/byte",
-       "rel" : "self",
-       "type" : "application/activity+json"
+      "rel": "self",
+      "href": "https://hachyderm.io/users/byte",
+      "type": "application/activity+json"
     },
     {
-       "rel" : "http://ostatus.org/schema/1.0/subscribe",
-       "template" : "https://hachyderm.io/authorize_interaction?uri={uri}"
+      "rel": "http://ostatus.org/schema/1.0/subscribe",
+      "template": "https://hachyderm.io/authorize_interaction?uri={uri}"
     }
   ]
 }
