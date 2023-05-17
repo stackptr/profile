@@ -2,9 +2,9 @@
   "name": "x64.co",
   "version": "1.0.0",
   "description": "Personal website",
-  "main": "index.js",
+  "main": "index.ts",
   "scripts": {
-    "build": "tsc && cp -r public dist"
+    "build": "tsc"
   },
   "author": "stackptr <corey@x64.co> (https://github.com/stackptr)",
   "license": "ISC",

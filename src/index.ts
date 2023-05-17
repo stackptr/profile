@@ -1,13 +1,13 @@
 import express from 'express'
 import path from 'path'
 
-const src = path.join(__dirname, '/public')
+const src = path.join(__dirname, './../public')
 
 const app = express()
 
 app.use(express.static(src))
 
-app.use('/.well-known', express.static('well-known'))
+app.use('/.well-known', express.static(path.join(__dirname, './../well-known')))
 
 app.get('/', function (_req, res) {
   res.sendFile(src + '/index.html')
