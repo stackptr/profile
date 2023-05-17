@@ -4,11 +4,16 @@
   "description": "Personal website",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc && cp -r public dist"
   },
   "author": "stackptr <corey@x64.co> (https://github.com/stackptr)",
   "license": "ISC",
   "dependencies": {
     "express": "^4.13.4"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.17",
+    "@types/node": "^20.1.7",
+    "typescript": "^5.0.4"
   }
 }

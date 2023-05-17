@@ -1,15 +1,15 @@
-var express = require('express'),
-  path = require('path')
+import express from 'express'
+import path from 'path'
 
-var src = path.join(__dirname, '/public')
+const src = path.join(__dirname, '/public')
 
-var app = express()
+const app = express()
 
 app.use(express.static(src))
 
 app.use('/.well-known', express.static('well-known'))
 
-app.get('/', function (req, res) {
+app.get('/', function (_req, res) {
   res.sendFile(src + '/index.html')
 })
 
