@@ -7,6 +7,8 @@ var app = express();
 
 app.use(express.static(src));
 
+app.use('/.well-known', express.static('well-known'));
+
 app.get('/', function (req, res) {
   res.sendFile(src + '/index.html');
 });
