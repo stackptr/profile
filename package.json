@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "stackptr <corey@x64.co> (https://github.com/stackptr)",
   "license": "ISC",
   "dependencies": {
     "express": "^4.13.4"
