@@ -1,5 +1,5 @@
 {
-  description = "x64.co";
+  description = "Profile web page";
 
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
@@ -19,7 +19,7 @@
         yarn = pkgs.yarn;
         prefetch-yarn-deps = pkgs.prefetch-yarn-deps;
         app = pkgs.stdenv.mkDerivation (finalAttrs: {
-          name = "x64.co";
+          name = "profile";
           src = ./.;
           offlineCache = pkgs.fetchYarnDeps {
             yarnLock = "${finalAttrs.src}/yarn.lock";
@@ -56,7 +56,7 @@
 
             mkdir -p $out/lib
             cp -R . $out/lib
-            makeWrapper "${nodejs}/bin/node" "$out/bin/x64.co" \
+            makeWrapper "${nodejs}/bin/node" "$out/bin/profile" \
               --add-flags "$out/lib/dist/index.js"
 
             runHook postInstall
