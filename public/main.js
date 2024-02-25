@@ -1,6 +1,6 @@
 $(function () {
   // Set gravatar/email
-  var email = 'corey@x64.co',
+  var email = 'corey@zx.dev',
     hash = md5(email.trim().toLowerCase())
 
   $('.email').attr('href', 'mailto:' + email)
