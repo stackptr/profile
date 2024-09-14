@@ -18,6 +18,7 @@
         nodejs = pkgs.nodejs_18;
         yarn = pkgs.yarn;
         prefetch-yarn-deps = pkgs.prefetch-yarn-deps;
+        fixup-yarn-lock = pkgs.fixup-yarn-lock;
         app = pkgs.stdenv.mkDerivation (finalAttrs: {
           name = "profile";
           src = ./.;
@@ -28,6 +29,7 @@
           nativeBuildInputs = [
             makeWrapper
             nodejs
+            fixup-yarn-lock
             prefetch-yarn-deps
             yarn
           ];
