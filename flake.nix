@@ -15,7 +15,7 @@
       system: let
         pkgs = import nixpkgs {inherit system;};
         makeWrapper = pkgs.makeWrapper;
-        nodejs = pkgs.nodejs_18;
+        nodejs = pkgs.nodejs_22;
         yarn = pkgs.yarn;
         prefetch-yarn-deps = pkgs.prefetch-yarn-deps;
         fixup-yarn-lock = pkgs.fixup-yarn-lock;
